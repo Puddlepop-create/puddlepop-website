@@ -13,46 +13,19 @@
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
-<body>
+<body class="homepage">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="PuddlePop home">
-      <img src="assets/images/logo.webp" alt="PuddlePop — Colour, Create, Smile">
-    </a>
-    <button class="menu-button" aria-expanded="false" aria-controls="nav">Menu</button>
-    <nav id="nav" aria-label="Main navigation">
-      <a href="#worlds">Worlds</a>
-      <a href="#features">For parents</a>
-      <a href="#screenshots">Screenshots</a>
-      <a href="support.html">Support</a>
-    </nav>
-  </header>
-
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-shade"></div>
-      <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
-      <div class="hero-sign reveal">
-        <div class="sign-leaves sign-leaves-left" aria-hidden="true"></div>
-        <div class="sign-leaves sign-leaves-right" aria-hidden="true"></div>
-        <p class="eyebrow">A magical colouring adventure</p>
-        <h1 id="hero-title"><span class="welcome-line">Welcome to</span><span class="puddlepop-line">PuddlePop</span></h1>
-        <p>A safe, ad-free colouring adventure for children aged 3–7. Explore colourful worlds, paint wonderful pictures and celebrate every masterpiece.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#worlds">Explore the worlds</a>
-          <span class="button coming" aria-label="Coming soon on Google Play">Coming soon on Google Play</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-strip" aria-label="PuddlePop parent promises">
-      <div class="container trust-grid">
-        <div><span class="trust-icon" aria-hidden="true">✓</span><strong>No ads<br>ever</strong></div>
-        <div><span class="trust-icon" aria-hidden="true">🔒</span><strong>Parent<br>protected</strong></div>
-        <div><span class="trust-icon" aria-hidden="true">⭐</span><strong>Designed for<br>ages 3–7</strong></div>
-        <div><span class="trust-icon" aria-hidden="true">☁</span><strong>Calm creative<br>play</strong></div>
-        <div><span class="trust-icon" aria-hidden="true">♥</span><strong>Saves<br>progress</strong></div>
-      </div>
+    <section class="hero-option-two" id="top" aria-labelledby="hero-title">
+      <img class="hero-option-two-art" src="assets/images/hero-option-2.webp" alt="PuddlePop welcome screen with Pip, a wooden sign, six magical worlds and parent trust promises">
+      <h1 id="hero-title" class="visually-hidden">Welcome to PuddlePop</h1>
+      <nav class="hero-hotspots" aria-label="Main navigation">
+        <a class="hotspot hotspot-worlds" href="#worlds"><span>Explore the worlds</span></a>
+        <a class="hotspot hotspot-parents" href="#features"><span>For parents</span></a>
+        <a class="hotspot hotspot-about" href="#screenshots"><span>About PuddlePop</span></a>
+        <a class="hotspot hotspot-support" href="support.html"><span>Support</span></a>
+        <a class="hotspot hotspot-explore" href="#worlds"><span>Explore the worlds</span></a>
+      </nav>
     </section>
 
     <section class="intro section-wave" aria-labelledby="intro-title">
