@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="PuddlePop is a safe, ad-free colouring adventure for children aged 3–7. Explore six magical worlds, paint beautiful pictures and create happy memories.">
-  <meta name="theme-color" content="#087ee8">
+  <meta name="theme-color" content="#0759c7">
   <meta property="og:title" content="PuddlePop — Colour, Create, Smile">
   <meta property="og:description" content="A safe, ad-free colouring adventure for little artists aged 3–7.">
   <meta property="og:image" content="assets/images/home.webp">
   <title>PuddlePop — Colour, Create, Smile</title>
   <link rel="icon" href="assets/images/pip.webp">
-  <link rel="stylesheet" href="styles-v3.css?v=3">
+  <link rel="stylesheet" href="styles-v5.css?v=8">
   <script defer src="script.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1NWRG2J6LN"></script>
@@ -21,34 +21,61 @@
     gtag('config', 'G-1NWRG2J6LN');
   </script>
 </head>
-<body class="homepage">
+<body>
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="PuddlePop home">
+      <img src="assets/images/logo.webp" alt="PuddlePop">
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#worlds">Worlds</a>
+      <a href="#parents">For parents</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="support.html">Support</a>
+      <span class="nav-coming">Coming soon</span>
+    </nav>
+  </header>
+
   <main id="main">
-    <section class="hero-option-two" id="top" aria-labelledby="hero-title">
-      <img class="hero-option-two-art" src="assets/images/hero-option-2.webp" alt="PuddlePop welcome screen with Pip, a wooden sign, six magical worlds and parent trust promises">
-      <h1 id="hero-title" class="visually-hidden">Welcome to PuddlePop</h1>
-      <nav class="hero-hotspots" aria-label="Main navigation">
-        <a class="hotspot hotspot-worlds" href="#worlds"><span>Explore the worlds</span></a>
-        <a class="hotspot hotspot-parents" href="#features"><span>For parents</span></a>
-        <a class="hotspot hotspot-about" href="#screenshots"><span>About PuddlePop</span></a>
-        <a class="hotspot hotspot-support" href="support.html"><span>Support</span></a>
-        <a class="hotspot hotspot-explore" href="#worlds"><span>Explore the worlds</span></a>
-      </nav>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-art" src="assets/images/home.webp" alt="Pip surrounded by six magical PuddlePop worlds">
+      <div class="hero-board-copy">
+        <p class="hero-kicker">A magical colouring adventure</p>
+        <h1 id="hero-title"><span>Welcome to</span>PuddlePop</h1>
+      </div>
+      <div class="hero-info-panel" aria-label="PuddlePop introduction">
+        <div class="hero-info-text">
+          <span class="hero-safe-badge">100% ad-free</span>
+          <p>A safe, colourful adventure made for little artists aged 3–7.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#worlds">Explore the worlds</a>
+          <span class="button secondary">Coming soon on Google Play</span>
+        </div>
+      </div>
     </section>
 
-    <section class="intro section-wave" aria-labelledby="intro-title">
-      <div class="container split">
-        <div class="copy reveal">
-          <p class="eyebrow purple">Made for little artists</p>
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="container intro-grid">
+        <div class="intro-copy reveal">
+          <p class="eyebrow">Made for little artists</p>
           <h2 id="intro-title">Where creativity comes to life</h2>
           <p>PuddlePop is a beautifully designed colouring adventure created especially for children aged <strong>3 to 7</strong>.</p>
           <p>From pirate ships and friendly dinosaurs to magical castles and rocket adventures, every picture encourages imagination, confidence and creativity.</p>
           <div class="mini-badges" aria-label="Key benefits">
-            <span>100% ad-free</span><span>Calm play</span><span>Big controls</span><span>Saved progress</span>
+            <span>100% ad-free</span>
+            <span>Calm play</span>
+            <span>Big controls</span>
+            <span>Saved progress</span>
           </div>
         </div>
-        <figure class="pip-card pip-card-fitted reveal">
-          <img src="assets/images/pip-card-fitted.webp" alt="Pip, PuddlePop's cheerful blue paint-drop mascot, fully visible and waving">
+        <figure class="pip-card reveal">
+          <div class="pip-image-wrap">
+            <img src="assets/images/pip.webp" alt="Pip, the cheerful blue PuddlePop mascot, waving">
+          </div>
+          <figcaption><strong>Hi! I’m Pip!</strong><br>Come and colour with me!</figcaption>
         </figure>
       </div>
     </section>
@@ -59,30 +86,28 @@
         <h2 id="worlds-title" class="centred">Explore magical worlds</h2>
         <p class="section-lead">Every world contains ten cheerful pictures made for small hands and big imaginations.</p>
         <div class="world-grid">
-          <article class="world-card reveal"><img src="assets/images/world-pirate.webp" alt="Pirate ship on a tropical island"><div><span>🏴‍☠️</span><h3>Pirate Cove</h3><p>Treasure, ships and sunny island adventures.</p></div></article>
-          <article class="world-card reveal"><img src="assets/images/world-ocean.webp" alt="Colourful fish and coral reef"><div><span>🐠</span><h3>Ocean Reef</h3><p>Friendly sea creatures beneath sparkling waves.</p></div></article>
-          <article class="world-card reveal"><img src="assets/images/world-dino.webp" alt="Friendly green dinosaur on an island"><div><span>🦕</span><h3>Dino Valley</h3><p>Happy dinosaurs and prehistoric discoveries.</p></div></article>
-          <article class="world-card reveal"><img src="assets/images/world-farm.webp" alt="Red barn on a small green island"><div><span>🚜</span><h3>Farm Hills</h3><p>Animals, tractors and bright country days.</p></div></article>
-          <article class="world-card reveal"><img src="assets/images/world-space.webp" alt="Rocket surrounded by stars and planets"><div><span>🚀</span><h3>Space Lagoon</h3><p>Rockets, planets and twinkling adventures.</p></div></article>
-          <article class="world-card reveal"><img src="assets/images/world-princess.webp" alt="Pink fairy-tale castle"><div><span>👑</span><h3>Princess Castle</h3><p>Castles, magic and storybook wonder.</p></div></article>
+          <article class="world-card reveal"><img src="assets/images/world-pirate.webp" alt="Pirate ship on a tropical island"><div><h3>Pirate Cove</h3><p>Treasure, ships and sunny island adventures.</p></div></article>
+          <article class="world-card reveal"><img src="assets/images/world-ocean.webp" alt="Colourful fish and coral reef"><div><h3>Ocean Reef</h3><p>Friendly sea creatures beneath sparkling waves.</p></div></article>
+          <article class="world-card reveal"><img src="assets/images/world-dino.webp" alt="Friendly green dinosaur on an island"><div><h3>Dino Valley</h3><p>Happy dinosaurs and prehistoric discoveries.</p></div></article>
+          <article class="world-card reveal"><img src="assets/images/world-farm.webp" alt="Red barn on a small green island"><div><h3>Farm Hills</h3><p>Animals, tractors and bright country days.</p></div></article>
+          <article class="world-card reveal"><img src="assets/images/world-space.webp" alt="Rocket surrounded by stars and planets"><div><h3>Space Lagoon</h3><p>Rockets, planets and twinkling adventures.</p></div></article>
+          <article class="world-card reveal"><img src="assets/images/world-princess.webp" alt="Pink fairy-tale castle"><div><h3>Princess Castle</h3><p>Castles, magic and storybook wonder.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section id="features" class="features" aria-labelledby="features-title">
+    <section id="parents" class="features" aria-labelledby="features-title">
       <div class="container">
-        <p class="eyebrow centred purple">Made with parents in mind</p>
+        <p class="eyebrow centred">Made with parents in mind</p>
         <h2 id="features-title" class="centred">Happy creativity. Thoughtful design.</h2>
         <div class="feature-grid">
-          <article class="feature reveal ad-free-feature"><span class="feature-icon">🚫</span><h3>No advertisements</h3><p>PuddlePop contains no third-party advertising, so children can create without disruptive adverts or sales messages.</p></article>
-          <article class="feature reveal"><span class="feature-icon">🎨</span><h3>Encourages creativity</h3><p>Children choose colours and paint with their fingers in a relaxed, playful space.</p></article>
-          <article class="feature reveal"><span class="feature-icon">😊</span><h3>Calm screen time</h3><p>No stressful timers or competitive scoring—just gentle, creative play.</p></article>
-          <article class="feature reveal"><span class="feature-icon">🔒</span><h3>Parent protected</h3><p>Adult settings and purchases sit behind a simple parental gate.</p></article>
-          <article class="feature reveal"><span class="feature-icon">👆</span><h3>Designed for ages 3–7</h3><p>Large controls, clear navigation and a layout designed for young children.</p></article>
-          <article class="feature reveal"><span class="feature-icon">💾</span><h3>Saves every masterpiece</h3><p>Pictures and progress can be continued later for each child profile.</p></article>
-          <article class="feature reveal"><span class="feature-icon">⭐</span><h3>Positive celebrations</h3><p>Finished pictures receive a cheerful celebration and a special gold star.</p></article>
+          <article class="feature reveal"><span>🚫</span><h3>No advertisements</h3><p>No third-party adverts or disruptive sales messages.</p></article>
+          <article class="feature reveal"><span>🎨</span><h3>Encourages creativity</h3><p>Children choose colours and paint in a relaxed space.</p></article>
+          <article class="feature reveal"><span>😊</span><h3>Calm screen time</h3><p>No stressful timers or competitive scoring.</p></article>
+          <article class="feature reveal"><span>🔒</span><h3>Parent protected</h3><p>Adult settings and purchases sit behind a parental gate.</p></article>
+          <article class="feature reveal"><span>👆</span><h3>Designed for ages 3–7</h3><p>Large controls and clear, child-friendly navigation.</p></article>
+          <article class="feature reveal"><span>💾</span><h3>Saves every masterpiece</h3><p>Pictures and progress can be continued later.</p></article>
         </div>
-        <p class="safety-note">PuddlePop is ad-free and does not include third-party advertisements, public chat, social networking or links that children can freely browse.</p>
       </div>
     </section>
 
@@ -91,7 +116,7 @@
         <p class="eyebrow centred">Inside PuddlePop</p>
         <h2 id="screens-title" class="centred">A colourful studio made for small hands</h2>
         <div class="shot-grid">
-          <figure class="shot wide reveal"><img src="assets/images/colouring.webp" alt="PuddlePop Princess Castle colouring studio with colour pots and large buttons"><figcaption>Simple finger painting with large, friendly controls.</figcaption></figure>
+          <figure class="shot wide reveal"><img src="assets/images/colouring.webp" alt="PuddlePop Princess Castle colouring studio"><figcaption>Simple finger painting with large, friendly controls.</figcaption></figure>
           <figure class="shot reveal"><img src="assets/images/gallery.webp" alt="A magical castle world in PuddlePop"><figcaption>Beautifully themed worlds to explore.</figcaption></figure>
           <figure class="shot portrait reveal"><img src="assets/images/splash.webp" alt="PuddlePop loading screen featuring Pip"><figcaption>A warm welcome from Pip.</figcaption></figure>
         </div>
@@ -101,19 +126,36 @@
     <section class="download" aria-labelledby="download-title">
       <div class="download-panel reveal">
         <img src="assets/images/pip.webp" alt="Pip waving">
-        <div><p class="eyebrow">Colour • Create • Smile</p><h2 id="download-title">A world of colour is coming soon</h2><p>PuddlePop is preparing for its Google Play launch. Follow the official website for release information.</p><span class="button coming dark">Coming soon on Google Play</span></div>
+        <div>
+          <p class="eyebrow">Colour • Create • Smile</p>
+          <h2 id="download-title">A world of colour is coming soon</h2>
+          <p>PuddlePop is preparing for its Google Play launch. Follow the official website for release information.</p>
+          <span class="button secondary">Coming soon on Google Play</span>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-rainbow"></div>
+    <div class="rainbow"></div>
     <div class="container footer-grid">
-      <div><img class="footer-logo" src="assets/images/logo.webp" alt="PuddlePop"><p>A safe, ad-free, calm and creative app for children aged 3–7.</p></div>
-      <div><h2>Help &amp; information</h2><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:help@puddlepop.app">help@puddlepop.app</a></div>
-      <div><h2>Company</h2><p>PuddlePop Ltd<br>Registered in England and Wales<br>Company number 17349366</p></div>
+      <div>
+        <img class="footer-logo" src="assets/images/logo.webp" alt="PuddlePop">
+        <p>A safe, ad-free colouring adventure for children aged 3–7.</p>
+      </div>
+      <div>
+        <h2>Information</h2>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <a href="mailto:help@puddlepop.app">help@puddlepop.app</a>
+        <p>PuddlePop Ltd<br>Company number 17349366</p>
+      </div>
     </div>
-    <p class="copyright">© <span id="year">2026</span> PuddlePop Ltd. All rights reserved.</p>
+    <p class="copyright">© 2026 PuddlePop Ltd. All rights reserved.</p>
   </footer>
 </body>
 </html>
