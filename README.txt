@@ -28,3 +28,8 @@ Company number 17349366
 
 FULL-WIDTH HERO UPDATE (v3)
 The homepage now uses a true full-viewport-width hero. styles-v3.css has a new filename so browsers do not keep showing an older cached stylesheet.
+
+
+Google Analytics 4
+------------------
+GA4 measurement ID G-1NWRG2J6LN has been added to every HTML page.
