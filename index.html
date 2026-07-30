@@ -41,11 +41,18 @@
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-art-stage">
-        <img class="hero-art" src="assets/images/home.webp" alt="Pip surrounded by six magical PuddlePop worlds">
+        <picture class="hero-picture">
+          <source media="(max-width: 560px)" srcset="assets/images/hero-mobile-centred.webp">
+          <img class="hero-art" src="assets/images/home.webp" alt="Pip surrounded by six magical PuddlePop worlds">
+        </picture>
         <div class="hero-board-copy">
           <p class="hero-kicker">A magical colouring adventure</p>
           <h1 id="hero-title"><span>Welcome to</span>PuddlePop</h1>
         </div>
+      </div>
+      <div class="mobile-hero-hotspots" aria-label="PuddlePop mobile actions">
+        <a href="#worlds" aria-label="Explore the PuddlePop worlds"></a>
+        <span aria-label="Coming soon on Google Play"></span>
       </div>
       <div class="hero-info-panel" aria-label="PuddlePop introduction">
         <div class="hero-info-text">
