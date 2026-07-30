@@ -233,12 +233,10 @@
   .hero-info-panel .hero-actions{flex-direction:column}
 }
 
-/* Mobile hero alignment correction — 2026-07-30 */
+/* Mobile hero alignment correction — board copy uses the exact artwork coordinate. */
 @media (max-width:560px){
-  /* The mobile crop places the wooden board slightly right of the artwork's
-     desktop coordinate. Shift its copy with the same crop, not the viewport. */
   .hero-art-stage .hero-board-copy{
-    left:48.7%;
+    left:46.75%;
   }
   .hero-info-panel{
     bottom:0;
@@ -247,6 +245,6 @@
 
 @media (max-width:390px){
   .hero-art-stage .hero-board-copy{
-    left:48.9%;
+    left:46.75%;
   }
 }
